@@ -16,7 +16,7 @@ This repo is organized into the following key sections:
 
 ---
 
-## 🚀 How to Contribute
+## How to Contribute
 
 To add a new interface:
 
@@ -27,7 +27,7 @@ To add a new interface:
 
 ---
 
-## 🛠 Automation
+## Automation
 
 We use a **Git Analyzer Bot** to automatically track interface changes and keep our records up-to-date in **VEAR**. This bot scans for updates and validates interface definitions.
 
