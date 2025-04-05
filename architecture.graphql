@@ -40,5 +40,5 @@ interface-definitions/
 │   │   └── interface-bot.yml # Workflow to trigger bot and interface checks
 │   └── ISSUE_TEMPLATE.md     # Issue templates for creating new interface requests
 │
-├── .gitignore                # Ignore unnecessary files
+├── .gitignore                # Ignore unnecessary files.
 └── README.md                 # Main readme file (repo overview)
