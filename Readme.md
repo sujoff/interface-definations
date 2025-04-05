@@ -1,6 +1,6 @@
 # Interface Definitions Repository
 
-Welcome to the **Interface Definitions Repository**! This repository is designed to help us standardize the way we define and manage internal and external system interfaces.
+Welcome to the **Interface Definitions Repository**! This repository is to help us define and manage internal and external system interfaces.
 
 ---
 
