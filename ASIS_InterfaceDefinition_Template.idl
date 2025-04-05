@@ -1,0 +1,21 @@
+module MyExternalInterface {
+  // Interface Definition: <describe the interface here>
+  // Interface Type: <Internal or External>
+  // External Entity Name: <the name of the agency or org>
+  
+  interface ExternalInterfaceName1 {
+    // Method to ..........<describe the method's purpose>
+    string getData(string message);
+  };
+};
+
+
+
+
+Sample Template:
+
+module MyExternalInterface {
+  interface ExternalWeatherService {
+    string getForecast(string zipcode);
+  };
+};

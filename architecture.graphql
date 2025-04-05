@@ -1,0 +1,44 @@
+interface-definitions/
+├── templates/                # Interface definition templates for internal and external interfaces
+│   ├── README.md             # Documentation for using templates
+│   ├── idl-template.txt      # Base template for defining interfaces
+│   └── grpc-template.proto   # Example for other protocols
+│
+├── interfaces/               # Folder for storing all interface definitions
+│   ├── internal/             # Internal system interface definitions
+│   │   ├── service-a/        # Service-specific definitions
+│   │   │   └── interface-idl.txt  # Definition for a specific service
+│   │   └── service-b/
+│   │       └── interface-idl.txt
+│   │
+│   └── external/             # External interfaces (e.g., vendor APIs)
+│       ├── vendor-x/         # Vendor-specific interface definitions
+│       │   └── interface-idl.txt
+│       └── agency-y/
+│           └── interface-idl.txt
+│
+├── docs/                     # Documentation for team onboarding, process, and guidelines
+│   ├── README.md             # High-level introduction to the repo and how to use it
+│   ├── interface-guidelines.md  # Best practices for defining interfaces
+│   ├── process-flow.md       # Visual representation of how interfaces are tracked in VEAR
+│   ├── contribution-guide.md # How to contribute new interface definitions
+│   └── faq.md                # Frequently asked questions for interface contributors
+│
+├── code-snippets/            # Examples of how to use the interfaces in code
+│   ├── rest-example.md       # Example of a REST interface usage
+│   ├── grpc-example.md       # Example of a gRPC interface usage
+│   └── soap-example.md       # Example of a SOAP interface usage
+│
+├── tools/                    # Tools and bots used to automate and monitor interfaces
+│   └── git-analyzer-bot/     # Script for scanning repos, checking interface definitions
+│       ├── bot.py            # Python script for analyzing and updating VEAR records
+│       ├── config.yaml       # Bot configuration settings
+│       └── README.md         # Documentation for the bot and its setup
+│
+├── .github/                  # GitHub Actions for automation
+│   ├── workflows/            # GitHub Action workflow files
+│   │   └── interface-bot.yml # Workflow to trigger bot and interface checks
+│   └── ISSUE_TEMPLATE.md     # Issue templates for creating new interface requests
+│
+├── .gitignore                # Ignore unnecessary files
+└── README.md                 # Main readme file (repo overview)
