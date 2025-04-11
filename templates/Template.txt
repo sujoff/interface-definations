@@ -1,0 +1,35 @@
+module AESSurveillance {
+  // Interface Definition: This interface defines methods for automated system interface surveillance (ASIS)
+  // as part of the AES (Automated Enterprise Systems) architecture strategy. It enables the exchange of system
+  // connection data between external systems or system partners and the VEAR database via a scheduled process.
+  // The interface supports mining GitHub repositories for interface definitions and updates VEAR using GraphQL API.
+  // Interface Type: External
+  // External Entity Name: AES (Automated Enterprise Systems)
+  // Supported Payload Formats: CSV (Comma-Separated Values), DTD (Document Type Definition), IAR (Internal Assessment Report), JSON (JavaScript Object Notation), PDF (Portable Document Format), Plain (Plain Text), XML (Extensible Markup Language), ZIP (Compressed File Format)
+  // Exchange Protocols: FTP, HTTP, HTTPS, IMAP, IMAPS, MLM, MLMP, SOAP
+  // Frequency of Data Exchange: Ad-hoc, Bi-weekly, Daily, Hourly, Monthly, Quarterly, Real-time, Semi-annually, Weekly
+  // Interoperability Level: Level 1, Level 2, Level 3
+  // System Interfaces: External System, System Partner, Terminology Model
+  // Availability Flag: TRUE or FALSE
+  // Message Exchange: Standard, List of another definition (as per AES terminology)
+  // Supported Terminology Models: ICF (International Classification of Functioning), LOINC (Logical Observation Identifiers Names and Codes), MNV, NDC (National Drug Code), NDF-RT (National Drug File - Reference Terminology), NUCC (National Uniform Claim Committee), ODM, RxNORM (Normalized Names for Clinical Drugs), SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms), UMLS (Unified Medical Language System), UCUM (Unified Code for Units of Measure)
+  // See AES ASIS Strategy Diagram for workflow details (GitHub templates, Git Analyzer Bot, VEAR updates via GraphQL API)
+  // Note: Additional methods like getTerminologyModel(string modelName) or submitMedicalReport(string reportData) can be added based on specific requirements.
+
+  interface SystemInterfaceSurveillance {
+    // Method to retrieve the status of a system interface
+    // Input parameter 'interfaceId' identifies the specific interface
+    // Returns a string indicating the status (e.g., "Active", "Inactive")
+    string getSystemStatus(string interfaceId);
+
+    // Method to retrieve system connection data for surveillance from a GitHub repository
+    // Input parameter 'interfaceId' identifies the external system or system partner
+    // Returns a JSON string containing connection data
+    string getConnectionData(string interfaceId);
+
+    // Method to update VEAR with system interface metadata via GraphQL API
+    // Input parameter 'metadata' is a JSON string containing interface details
+    // Returns a status message indicating success or failure (e.g., "Success: VEAR updated")
+    string updateVEAR(string metadata);
+  };
+};
