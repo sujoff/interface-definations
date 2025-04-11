@@ -1,0 +1,28 @@
+module MyExternalInterface {
+  // Interface Definition: This interface defines methods for automated system interface surveillance (ASIS)
+  // as part of the AES (Automated Enterprise Systems) architecture strategy. It enables the exchange of system
+  // connection data between external systems or system partners and the VEAR database via a scheduled process.
+  // The interface supports the mining of GitHub repositories for interface definitions and updates VEAR using GraphQL API.
+  // Interface Type: External
+  // External Entity Name: AES (Automated Enterprise Systems)
+  // Supported Payload Formats: CSV (Comma-Separated Values), JSON (JavaScript Object Notation), XML (Extensible Markup Language), ZIP (Compressed File Format)
+  // Exchange Protocols: HTTPS, SOAP, TCP/IP, FTP, MLP, SMTP, SOCKET
+  // Frequency of Data Exchange: Annually, Bi-Weekly, Daily, Hourly, Monthly, Quarterly, Real Time, Semi-Annually, Upon Request, Weekly
+  // Interoperability Level: Level 1, Level 2
+  // System Interfaces: External System, System Partner, Terminology Model
+  // Availability Flag: TRUE or FALSE
+  // Message Exchange: List of another definition (as per AES terminology)
+  // See AES ASIS Strategy Diagram for workflow details (GitHub templates, Git Analyzer Bot, VEAR updates via GraphQL API)
+
+  interface SystemInterfaceSurveillance {
+    // Method to retrieve system connection data for surveillance from a GitHub repository
+    // Input parameter 'systemId' identifies the external system or system partner
+    // Returns a JSON string containing connection data
+    string getConnectionData(string systemId);
+
+    // Method to update VEAR with system interface metadata via GraphQL API
+    // Input parameter 'metadata' is a JSON string containing interface details
+    // Returns a status message indicating success or failure
+    string updateVEAR(string metadata);
+  };
+};
